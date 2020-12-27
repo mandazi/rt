@@ -620,3 +620,15 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.ramadan-series-selector a {
+  clear:both;
+  display:block;
+  text-decoration: none;
+  margin: 10px 0;
+}
+.ramadan-series-selector span {
+  width: 100%;
+  margin: 2px 0;
+  display: inline-block;
+}

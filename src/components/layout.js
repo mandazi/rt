@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          Powered by <b>Allah</b>. Built by the <a href="https://www.halaltube.com">Halal Tube</a>.
         </footer>
       </div>
     </>

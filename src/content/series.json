@@ -1,0 +1,29 @@
+{
+    "title": "Ramadan Series List",
+    "content": [
+      {
+        "name": "Angels in Your Presence",
+        "organization": "Yaqeen Institute",
+        "speakers": ["Omar Suleiman"],
+        "url": "omar-suleiman-angels-in-your-presence",
+        "year": "2020",
+        "islamic_year": "1441"
+      },
+      {
+        "name": "Comfort in times of Crisis",
+        "organization": "Eman Channel",
+        "speakers": ["Ismail ibn Musa Menk"],
+        "url": "mufti-menk-comfort-in-times-of-crisis",
+        "year": "2020",
+        "islamic_year": "1441"
+      },
+      {
+        "name": "The Message of The Quran",
+        "organization": "East Plano Islamic Center",
+        "speakers": ["Yasir Qadhi"],
+        "url": "yasir-qadhi-the-message-of-the-quran",
+        "year": "2020",
+        "islamic_year": "1441"
+      }
+    ]
+  }
