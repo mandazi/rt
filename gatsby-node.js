@@ -4,8 +4,9 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-import Series from "../components/series";
-
+//const fs = require(`fs`);
+//const seriesData = fs.readFileSync("./src/content/series.json");
+const seriesDataRaw = require('./src/content/series.json');
 
 // You can delete this file if you're not using it
 exports.onCreateNode = ({ node, getNode }) => {
@@ -16,20 +17,15 @@ exports.onCreateNode = ({ node, getNode }) => {
 }
 
 exports.createPages = async ({ actions: { createPage } }) => {
-    // `getSeries` is a function that fetches our data
-    const allPokemon = await getPokemonData(["pikachu", "charizard", "squirtle"])
-    // Create a page that lists all Pokémon.
-    createPage({
-      path: `/`,
-      component: require.resolve("./src/templates/all-pokemon.js"),
-      context: { allPokemon },
-    })
-    // Create a page for each Pokémon.
-    allPokemon.forEach(pokemon => {
+    const seriesData = JSON.stringify(seriesDataRaw);
+    
+    // Create a page for each series.
+    seriesData.forEach(series => {
+      console.log('series',series);
       createPage({
-        path: `/pokemon/${pokemon.name}/`,
-        component: require.resolve("./src/templates/pokemon.js"),
-        context: { pokemon },
+        path: `/series/${series.url}/`,
+        component: require.resolve("./src/templates/series-single.js"),
+        context: { series },
       })
     })
   }
