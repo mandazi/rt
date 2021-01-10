@@ -2,17 +2,7 @@ import React from "react"
 import seriesData from "../content/series.json"
 
 export default class Series extends React.Component {
-    state = {
-        selected: ""
-    }
 
-    handleChange = event => {
-        const value = event.target.value
-        this.setState({
-            selected: value
-        })
-    }
-    
     render() {
         return (
             <div className="ramadan-series-selector">

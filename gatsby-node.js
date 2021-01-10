@@ -4,9 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-//const fs = require(`fs`);
-//const seriesData = fs.readFileSync("./src/content/series.json");
-const seriesDataRaw = require('./src/content/series.json');
+const path = require(`path`)
+const seriesData = require('./src/content/series.json');
 
 // You can delete this file if you're not using it
 exports.onCreateNode = ({ node, getNode }) => {
@@ -17,15 +16,28 @@ exports.onCreateNode = ({ node, getNode }) => {
 }
 
 exports.createPages = async ({ actions: { createPage } }) => {
-    const seriesData = JSON.stringify(seriesDataRaw);
-    
-    // Create a page for each series.
-    seriesData.forEach(series => {
-      console.log('series',series);
-      createPage({
-        path: `/series/${series.url}/`,
-        component: require.resolve("./src/templates/series-single.js"),
-        context: { series },
-      })
+
+  const seriesContent = seriesData.content;
+
+  seriesContent.forEach(series => {
+
+    const seriesData = require('./src/content/series/'+series.url+'.json');
+    const episodes = seriesData.episodes;
+
+    createPage({
+      path: `/series/${series.url}/`,
+      component: require.resolve("./src/templates/series-template.js"),
+      context: { series, episodes },
     })
-  }
+
+    if ( episodes && episodes.length > 0){
+      episodes.forEach( episode => {
+        createPage({
+          path: `/series/${series.url}/episode/${episode.episode}/`,
+          component: require.resolve("./src/templates/episode-template.js"),
+          context: { episode, series },
+        });
+      });
+    }
+  })
+}

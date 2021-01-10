@@ -35,9 +35,10 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()},
           {` `}
-          Powered by <b>Allah</b>. Built by the <a href="https://www.halaltube.com">Halal Tube</a>.
+          Powered by <b>Allah</b>.<br />
+          Want to suppor this site? Thanks, but instead we'd like you to <a href="http://www.mccleesburg.org/donate" target="_blank">help build a masjid</a>. JazakAllah khair!
         </footer>
       </div>
     </>

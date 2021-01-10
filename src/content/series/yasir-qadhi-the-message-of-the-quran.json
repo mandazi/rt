@@ -14,11 +14,18 @@
             "url": "https://www.youtube.com/watch?v=1gdi1W_HSRk"
         },
         {
-            "name": "TITLE",
-            "episode": 1,
-            "description":"",
-            "youtube_id": "YOUTUBEID",
-            "url": "https://www.youtube.com/watch?v=YOUTUBEID"
+            "name": "Surah Baqarah",
+            "episode": 2,
+            "description":"In the second part of The Message of the Quran, Shaykh Dr. Yasir talks about Juz 2 of the Quran!",
+            "youtube_id": "9LQxHMeerGY",
+            "url": "https://www.youtube.com/watch?v=9LQxHMeerGY"
+        },
+        {
+            "name": "Surah Ale-Imrān",
+            "episode": 3,
+            "description":"In the third part of The Message of the Quran, Shaykh Dr. Yasir talks about Surah Ale-Imran.",
+            "youtube_id": "YTd-OI7rwBk",
+            "url": "https://www.youtube.com/watch?v=YTd-OI7rwBk"
         },
         {
             "name": "TITLE",
@@ -208,13 +215,6 @@
             "description":"",
             "youtube_id": "YOUTUBEID",
             "url": "https://www.youtube.com/watch?v=YOUTUBEID"
-        },
-        {
-            "name": "TITLE",
-            "episode": 1,
-            "description":"",
-            "youtube_id": "YOUTUBEID",
-            "url": "https://www.youtube.com/watch?v=YOUTUBEID"
-        },
+        }
     ]
 }
