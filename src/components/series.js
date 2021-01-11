@@ -15,13 +15,11 @@ export default class Series extends React.Component {
     }
 
     render() {
-
         const filteredData = _.filter(seriesData.content,{"year":this.state.selectedYear});
-        console.log('filteredData',filteredData);
         return (
             <div className="ramadan-series-selector">
                 <h3>Select Year</h3>
-                <select value={this.state.selectedYear} onChange={(event)=>this.setYear(event)}>
+                <select defaultValue={this.state.selectedYear} onChange={(event)=>this.setYear(event)}>
                     <option value="2020">2020/1441</option>
                     <option value="2019">2019/1440</option>
                 </select>

@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
           © {new Date().getFullYear()},
           {` `}
           Powered by <b>Allah</b>.<br />
-          Want to suppor this site? Thanks, but instead we'd like you to <a href="http://www.mccleesburg.org/donate" target="_blank">help build a masjid</a>. JazakAllah khair!
+          Want to support this site? Thanks, but instead we'd like you to <a href="http://www.mccleesburg.org/donate" target="_blank" rel="noreferrer">help build a masjid</a>. JazakAllah khair!
         </footer>
       </div>
     </>
