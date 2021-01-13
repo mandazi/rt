@@ -22,6 +22,7 @@ export default class Series extends React.Component {
                 <select defaultValue={this.state.selectedYear} onChange={(event)=>this.setYear(event)}>
                     <option value="2020">2020/1441</option>
                     <option value="2019">2019/1440</option>
+                    <option value="2018">2018/1439</option>
                 </select>
 
                 <h3>Select Ramadan Series:</h3>
