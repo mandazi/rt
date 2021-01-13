@@ -32,6 +32,22 @@
         "url": "omar-suleiman-allah-loves",
         "year": "2019",
         "islamic_year": "1440"
-      }
+      },
+      {
+        "name": "Supplications From Revelation",
+        "organization": "",
+        "speakers": ["Ismail ibn Musa Menk"],
+        "url": "mufti-menk-supplications-from-revelation",
+        "year": "2018",
+        "islamic_year": "1439"
+      },
+      {
+        "name": "Prayers of the Pious",
+        "organization": "Yaqeen Institute",
+        "speakers": ["Omar Suleiman"],
+        "url": "omar-suleiman-prayers-of-the-pious",
+        "year": "2018",
+        "islamic_year": "1439"
+      },
     ]
   }
